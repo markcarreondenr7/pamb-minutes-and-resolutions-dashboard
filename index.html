@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PAMB Minutes and Resolutions Dashboard | DENR VII PENRO - Cebu</title>
+
+  <!-- Messenger / Viber / social preview metadata -->
+  <meta name="description"
+        content="PAMB Minutes and Resolutions Dashboard - DENR VII PENRO - Cebu">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+        content="PAMB Minutes and Resolutions Dashboard">
+  <meta property="og:description"
+        content="DENR VII PENRO - Cebu | Access the PAMB Minutes and Resolutions Dashboard">
+  <meta property="og:image"
+        content="https://lh3.googleusercontent.com/d/1dDRqdMN4tkfdHx3OtSRPjnTtKz9mo0B9">
+  <meta property="og:image:alt"
+        content="DENR VII PENRO - Cebu">
+  <meta property="og:site_name"
+        content="DENR VII PENRO - Cebu">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+        content="PAMB Minutes and Resolutions Dashboard">
+  <meta name="twitter:description"
+        content="DENR VII PENRO - Cebu | Access the PAMB Minutes and Resolutions Dashboard">
+  <meta name="twitter:image"
+        content="https://lh3.googleusercontent.com/d/1dDRqdMN4tkfdHx3OtSRPjnTtKz9mo0B9">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f4f6;
+      color: #1e293b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 620px;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .header {
+      background: #1a3627;
+      color: #ffffff;
+      padding: 30px 28px 26px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 105px;
+      height: 105px;
+      object-fit: contain;
+      margin-bottom: 18px;
+    }
+
+    .agency {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+    }
+
+    .title {
+      margin: 10px 0 0;
+      font-size: 27px;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    .content {
+      padding: 32px 28px 34px;
+      text-align: center;
+    }
+
+    .description {
+      margin: 0 auto 25px;
+      max-width: 500px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #475569;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 9px;
+      background: #0d8a4f;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      background: #09683a;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 23px;
+      }
+
+      .header,
+      .content {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+
+  <!--
+    This is the URL of your existing Apps Script dashboard.
+    The page does NOT replace or modify your dashboard.
+  -->
+  <script>
+    const DASHBOARD_URL =
+      "https://script.google.com/macros/s/AKfycbzlEzbArHbU6IMp4u0F3ZKR3BSwagaN4j99PcNBtzGXocW8WZHJTm400hEJTeFHpEz90A/exec";
+  </script>
+</head>
+
+<body>
+
+  <main class="card">
+    <header class="header">
+      <img
+        class="logo"
+        src="https://lh3.googleusercontent.com/d/1dDRqdMN4tkfdHx3OtSRPjnTtKz9mo0B9"
+        alt="DENR Logo">
+
+      <p class="agency">DENR VII PENRO - CEBU</p>
+
+      <h1 class="title">
+        PAMB Minutes and Resolutions Dashboard
+      </h1>
+    </header>
+
+    <section class="content">
+      <p class="description">
+        Access the PAMB Minutes and Resolutions Dashboard for
+        DENR VII PENRO - Cebu.
+      </p>
+
+      <a
+        class="button"
+        id="openDashboard"
+        href="#">
+        📋 Open PAMB Dashboard
+      </a>
+
+      <div class="footer">
+        Department of Environment and Natural Resources<br>
+        Region VII • PENRO Cebu
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("openDashboard").href = DASHBOARD_URL;
+
+    /*
+      Optional automatic redirect:
+      If you want this page to immediately open the dashboard,
+      change false to true.
+    */
+    const AUTO_REDIRECT = false;
+
+    if (AUTO_REDIRECT) {
+      setTimeout(() => {
+        window.location.href = DASHBOARD_URL;
+      }, 800);
+    }
+  </script>
+
+</body>
+</html>
